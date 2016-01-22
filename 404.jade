@@ -1,0 +1,19 @@
+include _base-var
+doctype html
+html(lang='zh-CN')
+   head
+      //- 默认地址
+      base(href='')
+      //- 编码和渲染
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible' content='IE=edge')
+      meta(name='renderer' content='webkit')
+      //- SEO
+      title #{page404Title}
+      //- viewport
+      meta(name='viewport' content='maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width,initial-scale=1.0')
+      //- 图标
+      link(rel='shortcut icon' href='/favicon.ico')
+   body
+      //content
+      H1 Page Not Found!

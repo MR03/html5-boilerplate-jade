@@ -1,0 +1,36 @@
+include _base-var
+doctype html
+html(lang='zh-CN' class='no-js')
+   head
+      //- 编码和渲染
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible' content='IE=edge')
+      meta(name='renderer' content='webkit')
+      //- SEO
+      title #{indexTitle}
+      meta(name="keywords" content="")
+      meta(name="description" content="")
+      meta(name="author" content="")
+      //- viewport
+      meta(name='viewport' content='maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width,initial-scale=1.0')
+      //- 图标
+      link(rel='shortcut icon' href='/favicon.ico')
+      //- 自行确定normalize or reset
+      //前置js
+      //- Modernizr检测浏览器对 CSS3 或 HTML5 功能支持情况
+      script(src='js/lib/modernizr-2.8.3.min.js')
+      //- prefix-free用于自动添加css前缀
+      script(src='js/lib/prefixfree.min.js')
+      //- 备注:现在jade不支持条件注释,有需要自行添加
+   body
+      //content
+      p HELLO WORLD!
+      //js
+      //- CDN服务:cdn.bootcss.com
+      script(src='//cdn.bootcss.com/jquery/1.12.0/jquery.min.js')
+      script
+         | window.jQuery || document.write('<script src="js/lib/jquery-1.12.0.min.js"><\/script>')
+      script(src='js/plugins/plugins.js')
+      script(src='js/plugins/BrowserDetect.js')
+      script(src='js/module/main.js')
+      //- 自行确定数据统计
