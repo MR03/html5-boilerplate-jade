@@ -4,17 +4,26 @@ html(lang='zh-CN' class='no-js')
    head
       //- 编码和渲染
       meta(charset='utf-8')
-      meta(http-equiv='X-UA-Compatible' content='IE=edge')
-      meta(name='renderer' content='webkit')
       //- SEO
-      title #{indexTitle}
       meta(name="keywords" content="")
       meta(name="description" content="")
       meta(name="author" content="")
+      //- 临时地址
+      base(href='/')
+      //- 编码和渲染
+      meta(http-equiv='X-UA-Compatible' content='IE=edge')
+      meta(name='renderer' content='webkit')
+      meta(name='apple-mobile-web-app-capable' content='yes')
+      meta(name='apple-mobile-web-app-status-bar-style' content='black')
+      meta(name='format-detection' content='telephone=no')
+      meta(name='wap-font-scale' content='no')
       //- viewport
       meta(name='viewport' content='maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width,initial-scale=1.0')
       //- 图标
       link(rel='shortcut icon' href='/favicon.ico')
+      //- 网页title
+      title #{indexTitle}
+
       //- 自行确定normalize or reset
       //前置js
       //- Modernizr检测浏览器对 CSS3 或 HTML5 功能支持情况
